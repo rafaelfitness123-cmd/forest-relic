@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Forest Relic | Floresta dos Ecos</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="menu"><button onclick="setDay()">Dia</button><button onclick="setDawn()">Amanhecer</button><button onclick="setSunset()">Pôr do sol</button><button onclick="setNight()">Noite</button></div>
+<div id="startScreen"><div id="startBox"><h1>FOREST RELIC</h1><p>Uma estrada esquecida. Uma casa vazia.<br>Alguma coisa observa da floresta.</p><button id="playButton">INICIAR HISTÓRIA</button><div id="audioCredits">Protótipo v14 organizado no GitHub.</div></div></div>
+<div id="hint">Clique em JOGAR</div><div id="crosshair"></div>
+<div id="chargeWrap"><div id="chargeBar"></div></div>
+<div id="hotbar"><div class="slot locked" data-slot="1"><b>🔦</b><span>1 Lanterna</span></div><div class="slot" data-slot="2"><b>🏹</b><span>2 Arco</span></div><div class="slot active" data-slot="3"><b>✋</b><span>3 Mão</span></div></div>
+<div id="status">Mãos livres</div><div id="runtimeError" title="Clique para fechar o aviso"></div>
+<div id="objective"></div>
+<div id="interact"></div>
+<div id="fade"></div>
+<div id="cinematicText"></div>
+<div id="storyContinue">Clique para sair do carro</div>
+<div id="jumpscareVignette"></div><div id="storyModal"><div id="storyPaper"></div></div><div id="noteModal"><div id="notePaper"><button id="closeNote">Fechar</button><h2>Bilhete amassado</h2>
+<p><b>Se você encontrou isto, não siga os olhos.</b></p>
+<p>Há alguma coisa entre as árvores. Não sei se é um homem. Ela observa de longe e parece entender quando foi percebida.</p>
+<p>À noite, os olhos devolvem a luz como os de um animal. Não se aproxime só porque ela está parada.</p>
+<p>Eu tentei encará-la. Por alguns segundos ela não fez nada. Depois correu para dentro da mata rápido demais para alguém daquele tamanho.</p>
+<p>Escute os galhos. Quando o som vier de trás, não assuma que ela ainda está atrás de você.</p>
+<p style="margin-bottom:0"><i>— M.</i></p>
+</div></div>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}
+</script>
+<script src="./src/runtime/game-b64-part01.js"></script>
+<script src="./src/runtime/game-b64-part02.js"></script>
+<script src="./src/runtime/game-b64-part03.js"></script>
+<script src="./src/runtime/game-b64-part04.js"></script>
+<script src="./src/runtime/game-b64-part05.js"></script>
+<script src="./src/runtime/game-b64-part06.js"></script>
+<script src="./src/game-loader.js"></script>
+</body>
+</html>
