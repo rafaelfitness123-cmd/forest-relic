@@ -1,0 +1,31 @@
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;font-family:Arial,sans-serif}
+canvas{display:block}
+#menu{display:none;position:fixed;top:15px;left:15px;z-index:20;padding:10px;border-radius:10px;background:rgba(0,0,0,.55);color:#fff}
+button{margin:3px;padding:8px 12px;cursor:pointer;border:0;border-radius:7px}
+#startScreen{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(10,20,15,.80),rgba(4,8,6,.92));color:#fff}
+#startBox{width:min(470px,86vw);padding:30px;background:rgba(0,0,0,.7);border-radius:18px;text-align:center}
+#playButton{margin-top:20px;padding:14px 32px;font-size:20px;font-weight:bold}
+#hint{position:fixed;bottom:92px;left:50%;transform:translateX(-50%);z-index:30;color:#fff;background:rgba(0,0,0,.5);padding:7px 12px;border-radius:8px}
+#crosshair{position:fixed;left:50%;top:50%;width:7px;height:7px;border:2px solid #fff;border-radius:50%;transform:translate(-50%,-50%);z-index:15;pointer-events:none}
+#hotbar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:8px;z-index:40}
+.slot{width:72px;height:60px;border:2px solid rgba(255,255,255,.35);background:rgba(0,0,0,.58);color:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:12px;box-sizing:border-box}
+.slot b{font-size:18px}.slot.active{border:3px solid #ffd86b;background:rgba(70,55,15,.76);transform:translateY(-3px)}
+#chargeWrap{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);width:240px;height:15px;background:rgba(0,0,0,.55);border:2px solid rgba(255,255,255,.65);border-radius:8px;z-index:35;overflow:hidden;display:none}
+#chargeBar{height:100%;width:0%;background:linear-gradient(90deg,#77d86b,#ffe45c,#ff6a4a)}
+#status{position:fixed;right:15px;bottom:15px;z-index:30;color:#fff;background:rgba(0,0,0,.55);padding:8px 12px;border-radius:8px}
+#objective{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:55;color:#eee;background:rgba(0,0,0,.55);padding:10px 18px;border-left:3px solid #d7c998;letter-spacing:.3px;max-width:620px;text-align:center;opacity:0;transition:opacity .45s}
+#objective.show{opacity:1}
+#interact{position:fixed;left:50%;top:58%;transform:translate(-50%,-50%);z-index:60;color:#fff;background:rgba(0,0,0,.62);padding:8px 13px;border-radius:7px;display:none}
+#fade{position:fixed;inset:0;z-index:90;background:#000;pointer-events:none;opacity:0;transition:opacity .6s}
+#cinematicText{position:fixed;left:50%;bottom:12%;transform:translateX(-50%);z-index:91;color:#eee;font-size:18px;text-shadow:0 2px 6px #000;letter-spacing:.4px;text-align:center;opacity:0;transition:opacity .6s;pointer-events:none}
+#noteModal{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;color:#241b12}
+#notePaper{width:min(620px,84vw);max-height:76vh;overflow:auto;background:#d8c7a0;padding:34px 38px;box-shadow:0 16px 60px #000;border-radius:4px;font-family:Georgia,serif;line-height:1.55;transform:rotate(-.4deg)}
+#notePaper h2{margin-top:0;font-size:24px}#notePaper button{float:right;background:#34281e;color:#eee;padding:9px 16px}
+.slot.locked{opacity:.35;filter:grayscale(1)}
+#storyContinue{position:fixed;inset:0;z-index:92;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.25);color:#fff;font-size:18px;text-shadow:0 2px 7px #000;cursor:pointer}
+#runtimeError{position:fixed;left:12px;top:12px;z-index:9999;display:none;max-width:680px;cursor:pointer;background:#4b1010;color:#fff;padding:10px 12px;border:1px solid #ff7777;font:12px monospace;white-space:pre-wrap}
+#storyModal{position:fixed;inset:0;z-index:125;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center}
+#storyPaper{width:min(620px,84vw);max-height:76vh;overflow:auto;background:#cbbb91;color:#241b12;padding:32px 38px;border-radius:4px;font-family:Georgia,serif;line-height:1.55;box-shadow:0 18px 70px #000}
+#storyPaper button{float:right;background:#34281e;color:#eee;padding:9px 16px}
+#jumpscareVignette{position:fixed;inset:0;z-index:119;pointer-events:none;opacity:0;background:radial-gradient(circle,transparent 15%,rgba(55,0,0,.18) 50%,rgba(0,0,0,.92) 100%);transition:opacity .08s}
+#audioCredits{font-size:10px;opacity:.46;margin-top:14px;line-height:1.3}
